@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <title> Profile Card</title>
+    <style>
+                body {
+            font-family: 'Arial', sans-serif;
+            background-color: whitesmoke;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .portfolio {
+            text-align: center;
+          animation: fadeIn 2s ease-in forwards;
+        }
+ @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+
+        .profile-pic {
+            border-radius: 50%;
+            border: 5px solid #3498; 
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+h1{
+  font-family: 'Playfair Display', serif;
+  color:#333;
+}
+p{
+  color:#3498;
+  font-size:18px;
+  font-weight:bold;
+}
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 30px;
+            transition: color 0.3s ease; 
+           animation: slideIn 1s ease-in-out forwards;
+        }
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+        .social-links a:hover {
+            color: #3498; 
+        }
+    </style>
+    
+</head>
+<body>
+
+<div class="portfolio">
+    <div class="profile-pic">
+        <img src="https://cdn.vectorstock.com/i/1000x1000/54/41/young-and-elegant-woman-avatar-profile-vector-9685441.webp">
+    </div>
+    <h1>Srikavya Vasala</h1>
+    <p>FrontEnd Developer</p>
+    
+    <div class="social-links">
+        <a href="/logout" class="btn btn-danger">Logout</a>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</body>
+</html>
+
+
+    
